@@ -4,10 +4,13 @@ import About from "./pages/About.jsx";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import Profile from "./pages/Profile";
+import Header from "./components/Header.jsx";
 
 export default function App() {
   return (
     <BrowserRouter>
+      {/**Header */}
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
